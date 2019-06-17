@@ -1,5 +1,5 @@
 '''
-    KC_EJ04
+    KC_EJ07
     Crea un programa que solicite tres notas y calcule su media.
     Dependiendo del valor de la media, mostrará si el resultado es 'Apto' o 'No Apto'.
 '''

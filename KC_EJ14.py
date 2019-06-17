@@ -1,5 +1,5 @@
 '''
-    KC_EJ13
+    KC_EJ14
     Crear un programa que reciba un texto y muestre su longitud.
 '''
 
