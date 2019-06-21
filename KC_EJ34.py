@@ -80,7 +80,7 @@ class AlumnoPresencial(KC_EJ31.Alumno):
                 
         return P
     
-   
+'''   
 if __name__ == "__main__":
     AlumnoR = AlumnoRemoto()
     AlumnoP = AlumnoPresencial()
@@ -99,4 +99,4 @@ if __name__ == "__main__":
     print("", AlumnoP.correo_electronico)
     print("", AlumnoP.estatus_inscrito)
     print("", AlumnoP.numero_asiento)
-    
+'''    
