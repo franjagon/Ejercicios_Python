@@ -12,11 +12,11 @@ def pide_nombre(msg):
     while nombre is None:
         nombre = input(msg)
 
-        if len(nombre) != 0 and nombre.isalnum():
+        if len(nombre) != 0 and len(nombre) > 2 and nombre.isalnum():
             return nombre
         else:
             nombre = None
-            print("Nombre y apellidos no válidos.")
+            print("Nombre o apellido no válido.")
 
 
 # Función que se encarga de solicitar el dato al usuario mientras no introduzca un valor válido
@@ -47,7 +47,7 @@ def valida_nota(str_nota):
 
 # Ejecución del código principal
 if __name__ == "__main__":
-    _LISTA_ALUMNOS = []
+    lista_alumnos = []
 
     for n in range(0, 3):
         dic_Alumno = {"Nombre": "", "Apellido": "",
@@ -59,6 +59,6 @@ if __name__ == "__main__":
             else:
                 dic_Alumno[key] = pide_nota("Introduce su nota de {}: ".format(key))
 
-        _LISTA_ALUMNOS.append(dic_Alumno)
+        lista_alumnos.append(dic_Alumno)
 
-    print(_LISTA_ALUMNOS)
+    print(lista_alumnos)

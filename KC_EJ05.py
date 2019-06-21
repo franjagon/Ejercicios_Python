@@ -1,20 +1,20 @@
 '''
     KC_EJ05
-    Crear un programa que solicite el año y mes de nacimineto de dos personas y muestre el resultado de compararlas.
+    Crear un programa que solicite el año y mes de nacimiento de dos personas y muestre el resultado de compararlas.
 '''
 
 
 # Función que se encarga de solicitar el dato al usuario mientras no introduzca un valor válido
 def pide_valor(msg, moy):
     pedido = None
-    tupla_mes = ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+    _TUPLA_MESES = ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
                  "Noviembre", "Diciembre")
 
     while pedido is None:
         if moy == 'M':
             pedido = input(msg).capitalize()
 
-            if pedido not in tupla_mes:
+            if pedido not in _TUPLA_MESES:
                 pedido = None
 
         elif moy == 'Y':
